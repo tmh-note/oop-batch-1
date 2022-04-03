@@ -1,16 +1,14 @@
 <?php
 
-interface Person
+class Car
 {
+    public static $name = 'Toyota';
 
+    public static function drive()
+    {
+        return 'Drive';
+    }
 }
 
-interface Animal
-{
-
-}
-
-class Monkey implements Animal, Person
-{
-
-}
+echo Car::$name;
+echo Car::drive();
